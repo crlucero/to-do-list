@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-3.3.1.js"> </script>
+    <script src="js/scripts.js"></script>
+    <title>To Do List</title>
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>To Do List</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <hr>
+          <h2>Add a task:</h2>
+          <form id="formOne">
+            <div class="form-group">
+              <label for="taskName">Task Name</label>
+              <input type="text"  class="form-control" id="taskName">
+            </div>
+            <div class="form-group">
+              <label for="dueDate">Due Date</label>
+              <input type="text"  class="form-control" id="dueDate">
+            </div>
+            <div class="form-group">
+              <label for="priorityr">Priority</label>
+              <input type="text"  class="form-control" id="priority">
+            </div>
+            <button type="submit" class="btn-primary">Add</button>
+          </form>
+          <hr>
+          <h2>To Do List:</h2>
+          <ul id="tasks">
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div id="show-tasks">
+            <p>Task Name: <span class="task-name"></span></p>
+            <p>Due Date: <span class="due-date"></span></p>
+            <p>Priority: <span class="priority-level"></span></p>
+            <div id="buttons">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
